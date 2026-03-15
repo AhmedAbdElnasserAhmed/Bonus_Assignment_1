@@ -67,11 +67,13 @@ minikube image load frontend-app:latest
 kubectl get pods,svc -n dev
 
 ```
+![dev](dev.png)
 ```bash
 kubectl get pods,svc -n staging
 
 
 ```
+![staging](staging.png)
 - Execute port-forward to can access the app from the browser
 ```bash 
 kubectl port-forward pod/frontend-pod 8082:80 -n dev
@@ -79,3 +81,4 @@ kubectl port-forward pod/frontend-pod 8082:80 -n dev
 - open your browser at localhost:8082 then take the screenshot
 - 
 # Bonus_Assignment_1
+![web](web.png)
