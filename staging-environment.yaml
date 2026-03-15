@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: dev
+  name: staging
 ---
 apiVersion: v1
 kind: Pod
 metadata:
   name: backend-pod
-  namespace: dev
+  namespace: staging
   labels:
     app: backend
 spec:
@@ -32,7 +32,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: backend-service
-  namespace: dev
+  namespace: staging
 spec:
   selector:
     app: backend
@@ -46,7 +46,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: frontend-pod
-  namespace: dev
+  namespace: staging
   labels:
     app: frontend
 spec:
