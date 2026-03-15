@@ -65,13 +65,17 @@ minikube image load frontend-app:latest
 - Ensure that the status of pods and services in dev and staging namespace are running
 ```bash
 kubectl get pods,svc -n dev
+
 ```
 ```bash
 kubectl get pods,svc -n staging
+
+
 ```
 - Execute port-forward to can access the app from the browser
 ```bash 
 kubectl port-forward pod/frontend-pod 8082:80 -n dev
 ```
 - open your browser at localhost:8082 then take the screenshot
+- 
 # Bonus_Assignment_1
